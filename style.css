@@ -1,0 +1,329 @@
+/* Reset básico */
+.topbar {
+    background: linear-gradient(75deg, #fe7cc1 0%, #00bfff 20%, #20f069 45%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .topbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo .circle {
+    background: white;
+    color: #20f069;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .logo .circle img {
+  width: 100%;       
+  height: 100%;      
+  object-fit: cover; 
+  border-radius: 50%; 
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+  }
+  
+  .nav a:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-small {
+    background-color: white;
+    color: #20f069;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn-small:hover {
+    background-color: #eee;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+  }  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Hero */
+  .hero {
+    background: linear-gradient(145deg, #fe7cc1 0%, #00bfff 20%, #20f069 45%);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+  }
+  
+  .btn-primary {
+    background-color: #fff;
+    color: #20f069;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Seção de benefícios */
+  .benefits {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .benefits .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .benefits .card {
+    background-color: #20f069;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+  }
+  
+  /* Módulos */
+  .modules {
+    background: linear-gradient(115deg, #fe7cc1 0%, #00bfff 20%, #20f069 45%);
+    color: rgb(0, 0, 0);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .module-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .module {
+    background-color: #d3fac8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 240px;
+    text-align: center;
+  }
+  
+  .module h3 {
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+  
+  /* VISE Invest TV */
+  .tv {
+      background-color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+  }
+
+  /* Container dos vídeos (horizontal) */
+  .videos {
+      display: flex;
+      gap: 1rem; /* Espaço entre os vídeos */
+      overflow-x: auto; /* Rolagem horizontal se necessário */
+      padding: 1rem 0;
+      scrollbar-width: thin; /* Estilo da barra de rolagem (opcional) */
+  }
+
+  .video-main, .thumb {
+      min-width: 300px; 
+      flex: 1; 
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-main iframe, .thumb iframe {
+      width: 50%;
+      height: 380px; 
+      border: none;
+  }
+
+  .video-thumbs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .video-thumbs img {
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  /* Recursos */
+  .resources {
+    background-color: #f7f7f7;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .resources .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .resources .card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+  }
+  
+  /* Chamada final */
+  .cta-final {
+    background: linear-gradient(165deg, #fe7cc1 0%, #00bfff 20%, #20f069 45%);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .cta-final p {
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Rodapé */
+  .footer {
+    background-color: #111;
+    color: #bbb;
+    padding: 3rem 2rem;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .module-list,
+    .benefits .cards,
+    .resources .cards,
+    .footer-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .module,
+    .benefits .card,
+    .resources .card {
+      width: 90%;
+    }
+  }
+  
